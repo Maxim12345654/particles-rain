@@ -15,7 +15,8 @@ export class Particle {
         this.px = Math.floor(this.x);
         this.py = Math.floor(this.y);
         this.speed = this.brightnessArray[this.py][this.px];
-        this.y += this.speed;
+        let movement = 2.5 - this.speed;
+        this.y += movement;
         if(this.y > this.canvas.height){
             this.y = 0;
         }
