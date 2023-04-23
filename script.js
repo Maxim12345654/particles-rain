@@ -47,4 +47,5 @@ image.addEventListener('load', function () {
 
 
     animate();
+    requestAnimationFrame(animate);
 });
